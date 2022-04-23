@@ -38,7 +38,7 @@ a:hover,a:focus,a:active {
 	text-decoration:none;
 	outline:none!important;
 }
-p {
+p, li{
 	color:#8c9398;
 	word-spacing:1px;
 	line-height:25px;
@@ -190,7 +190,7 @@ sup {
 sub {
 	bottom:-0.25em;
 }
-p {
+p, li{
 	font-size: 14px;
 	font-weight:100;
 	line-height: 28px!important;
@@ -535,6 +535,16 @@ table {
 		transform:translateY(-20px);
 	}
 }
+
+.scroll p {
+	color:black;
+}
+
+@media screen and (min-width: 1375px) {
+  .scroll p {
+    color: white;
+  }
+}
 .scrollto {
 	padding: 150px 0px 0px 0px;
 	display:block;
@@ -558,6 +568,7 @@ table {
 .intro p {
 	margin:50px 0 0;
 }
+
 h1.arrow {
 	font-size: 16px;
 	text-transform:uppercase;
@@ -585,9 +596,10 @@ h1.arrow span {
 .color-bg a {
     color: #FFE800;
 }
-.color-bg h6, .color-bg p {
+.color-bg h6, .color-bg p, .color-bg li {
     color: white;
 }
+
 .color-bg h6::after{
 	border-color: #fff;
 }
@@ -636,10 +648,35 @@ h1.arrow span {
 	border: 1px solid #E04343;
 	color: #E04343;
 }
+
+.services .icon-bg {
+	position:relative;
+	width:175px;
+	height:175px;
+	margin:0 auto;
+	text-align:center;
+	line-height:180px;
+	font-size:56px;
+	color:FFE800;
+	border-radius:50%;
+	box-shadow:0 0 0 0 rgba(0,0,0,0.0);
+	margin-bottom:40px;
+	-webkit-transition:all .3s ease-out;
+	transition:all .3s ease-out;
+	border: 1px solid #E04343;
+	color: #FFE800;
+}
+
 .services .item:hover .icon {
 	background: #E04343;
 	border: 1px solid #E04343;
 }
+
+.services .item:hover .icon-bg {
+	background: #E04343;
+	border: 1px solid #E04343;
+}
+
 .services .item [class*=fa] {
 	-webkit-transition:all .3s ease-out;
 	transition:all .3s ease-out;
@@ -650,6 +687,11 @@ h1.arrow span {
 	-webkit-transition:all .3s ease-out;
 	transition:all .3s ease-out;
 	color:#fff;
+}
+
+.services ul {
+	padding: 0;
+    list-style-type: none;
 }
 .features-wrapper {
 	margin:70px 0 0;
@@ -669,6 +711,59 @@ i.respons {
 	border:1px solid #CCCCCC;
 	color: #CCCCCC;
 }
+
+.page-wrap {
+	 padding: 2em;
+	 background-color: #fff;
+	 width: 50%;
+	 margin: 0 auto;
+}
+ .skill-bar-container {
+	 position: relative;
+	 width: 100%;
+	 border-radius: 4px;
+	 background-color: whitesmoke;
+	 margin-bottom: 0.5em;
+}
+ .skill-bar-container .skill-bar {
+	 display: block;
+	 border-radius: 4px;
+	 height: 25px;
+}
+ .skill-bar-container .skill-bar.level1 {
+	 width: 20%;
+	 background-color: #d7edfa;
+}
+ .skill-bar-container .skill-bar.level2 {
+	 width: 40%;
+	 background-color: #c8e7f8;
+}
+ .skill-bar-container .skill-bar.level3 {
+	 width: 60%;
+	 background-color: #b9e0f7;
+}
+ .skill-bar-container .skill-bar.level4 {
+	 width: 80%;
+	 background-color: #a9d9f5;
+}
+ .skill-bar-container .skill-bar.level5 {
+	 width: 100%;
+	 background-color: #9ad3f3;
+}
+ .skill-bar-container .skill-name {
+	 position: absolute;
+	 top: 5px;
+	 left: 10px;
+	 color: #333;
+}
+ .skill-bar-container .skill-percent {
+	 position: absolute;
+	 top: 5px;
+	 right: 10px;
+	 color: #999;
+}
+ 
+
 /* ==========================================================================iPhone Section========================================================================== */
 .iphone {
 	width:50%;
